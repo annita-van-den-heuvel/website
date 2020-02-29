@@ -1,3 +1,5 @@
+@import url("//fonts.googleapis.com/css?family=Parisienne|Source+Sans+Pro&display=swap");
+
 section { position: relative; width: 100%; min-height: 800px; background-size: cover; background-position: center bottom; }
 section.header { background-image: url("christopher-burns-gyrrWzwqm5Y-unsplash.jpg"); }
 section.what { clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0 100%); background-color: #d36781; margin-top: -20%; }
