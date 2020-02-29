@@ -1,31 +1,43 @@
 @import url("//fonts.googleapis.com/css?family=Parisienne|Source+Sans+Pro|Material+Icons&display=swap");
 
-body { font-family: "Source Sans Pro", sans-serif; }
-    section { position: relative; width: 100%; overflow: hidden; background-size: cover; }
-    section.header { min-height: 300px; padding-bottom: 100px; background-image: url("images/bg_header_768px.jpg"); background-position: center top; color: #fff; }
+body { font-family: "Source Sans Pro", sans-serif; font-size: 16px; line-height: 26px; }
+    section { position: relative; width: 100%; padding-bottom: 8.5vw; margin-top: -8.5vw; overflow: hidden; background-size: cover; }
+    section.ltr { clip-path: polygon(0 0, 100% 8.5vw, 100% 100%, 0 100%); }
+    section.rtl { clip-path: polygon(0 8.5vw, 100% 0%, 100% 100%, 0 100%); }
+    section.header { padding-bottom: 20vw; margin-top: 0; background-image: url("images/bg_header_768px.jpg"); background-position: center top; color: #fff; }
     section.header:before { content: ""; position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: linear-gradient(to bottom, rgba(46, 49, 65, .7), rgba(46, 49, 65, .4)); background-size: cover; }
-    section.what { clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0 100%); background-color: #d36781; margin-top: -20%; }
-    section.how { clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%); background-color: #e9e2d0; margin-top: -20%; }
-    section.who { clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0 100%); background-color: #ea9085; margin-top: -20%; }
-    section.details { clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%); background-image: url("eddie-hooiveld-4824AhC_gwc-unsplash.jpg"); background-position: center bottom; margin-top: -20%; }
-        .content { position: relative; width: 80%; min-height: 200px; margin: 0 auto; }
+    section.what { padding: 80px 0; background-color: #d36781; }
+    section.how { background-color: #e9e2d0; }
+    section.who {  background-color: #ea9085; }
+    section.details { clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%); background-image: url("eddie-hooiveld-4824AhC_gwc-unsplash.jpg"); background-position: center bottom; }
+        .content { position: relative; width: 80vw; min-height: 200px; margin: 0 auto; }
+            section.ltr .content > * { float: left; text-align: left; }
+            section.rtl .content > * { float: right; text-align: right; }
             .logo, .tagline { position: relative; float: left; margin: 0; overflow: hidden; font-weight: normal; text-shadow: -1px -1px 0 rgba(0, 0, 0, .3), 1px -1px 0 rgba(0, 0, 0, .3), -1px 1px 0 rgba(0, 0, 0, .3), 1px 1px 0 rgba(0, 0, 0, .3); }
             .logo { width: 50%; min-width: 150px; padding-left: .03em; margin: 40px 0 20px; font-family: "Parisienne", serif; font-size: 48px; line-height: 1.2em; transform: scale(1.17, 1); transform-origin: 0 0; }
             .tagline { width: 100%; text-align: right; font-size: 19px; letter-spacing: .05em; }
             .menu { position: absolute; top: 14px; right: 0; padding: 10px 13px; border: 1px solid rgba(255, 255, 255, .1); border-radius: 3px; font-size: 18px; line-height: 1em; color: #fff; text-decoration: none; transition: .2s border-color; }
             .menu:hover { border-color: rgba(255, 255, 255, .9); }
                 .menu i { font-size: inherit; vertical-align: middle; }
+            .image { width: 190px; height: 190px; border-radius: 50%; margin-top: 38px; background-image: url("images/image_what_768px.jpg"); }
+            h3 { width: 100%; font-family: "Parisienne", serif; font-size: 25px; line-height: 60px; font-weight: normal; border-bottom: 1px solid #000; }
+            .content .text { width: 100%; }
+                .content .text strong { font-weight: normal; }
 
 @media (min-width: 576px){
 
-    .logo { font-size: 57px; }
+    section.what { padding: 100px 0; }
+        .logo { font-size: 57px; }
 }
 
 @media (min-width: 768px){
 
-    section.header { background-image: url("images/bg_header_992px.jpg"); }
+    section.header { padding-bottom: 170px; background-image: url("images/bg_header_992px.jpg"); }
+    section.what { padding: 125px 0; }
         .logo { font-size: 66px; }
         .tagline { text-align: left; letter-spacing: .04em; }
+        .image { width: 240px; height: 240px; margin-left: 45px; background-image: url("images/image_what_992px.jpg"); } /* TODO: Add margin and go on aligning stuff... */
+        h3, .content .text { width: calc(80vw - 240px - 45px); }
 }
 
 @media (min-width: 992px){
@@ -33,9 +45,14 @@ body { font-family: "Source Sans Pro", sans-serif; }
     section.header { background-image: url("images/bg_header_1200px.jpg"); }
         .logo { max-width: 300px; font-size: 76px; }
         .tagline { letter-spacing: .1em; }
+        .content .text span { line-break: strict; }
 }
 
 @media (min-width: 1200px){
 
     section.header { background-image: url("images/bg_header_2000px.jpg"); }
+    section.what { padding: 150px 0; }
+        .content { width: 70vw; }
+        h3, .content .text { width: calc(70vw - 240px - 45px); }
+        .content .text span { white-space: nowrap; }
 }
