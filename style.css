@@ -1,0 +1,22 @@
+section { position: relative; width: 100%; min-height: 800px; background-size: cover; background-position: center bottom; }
+section.header { background-image: url("christopher-burns-gyrrWzwqm5Y-unsplash.jpg"); }
+section.what { clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0 100%); background-color: #d36781; margin-top: -20%; }
+section.how { clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%); background-color: #e9e2d0; margin-top: -20%; }
+section.who { clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0 100%); background-color: #ea9085; margin-top: -20%; }
+section.details { clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%); background-image: url("eddie-hooiveld-4824AhC_gwc-unsplash.jpg"); margin-top: -20%; }
+
+@media (min-width: 576px){
+
+}
+
+@media (min-width: 768px){
+
+}
+
+@media (min-width: 992px){
+
+}
+
+@media (min-width: 1200px){
+    
+}
