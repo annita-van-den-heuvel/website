@@ -7,6 +7,8 @@
         <meta name="keywords" content="" />
         <meta name="author" content="" />
         <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+        <link rel="stylesheet" href="cssbox.css" />
+        <link rel="stylesheet" href="transition1.css" />
         <link href="style.css" rel="stylesheet" />
     </head>
     <body>
@@ -14,10 +16,10 @@
             <div class="content">
                 <h1 class="logo">Annita van&nbsp;den Heuvel</h1>
                 <h2 class="tagline">energiewerk &amp; begeleiding</h2>
-                <a class="menu" href="#">menu <i class="material-icons">menu</i></a>
+                <a class="menu_button cssbox-button" href="#menu">menu <i class="material-icons">menu</i></a>
             </div>
         </section>
-        <section class="what rtl">
+        <section class="what rtl" id="wat-is-energiewerk">
             <div class="content">
                 <span class="image"></span>
                 <h3>Wat is energiewerk?</h3>
@@ -33,7 +35,7 @@
                 </div>
             </div>
         </section>
-        <section class="how ltr">
+        <section class="how ltr" id="wat-doet-energiewerk-met-jou">
             <div class="content">
                 <span class="image"></span>
                 <h3>Wat doet energiewerk met jou?</h3>
@@ -48,7 +50,7 @@
                 </div>
             </div>
         </section>
-        <section class="who rtl">
+        <section class="who rtl" id="wie-is-annita">
             <div class="content">
                 <span class="image"></span>
                 <h3>Wie is Annita?</h3>
@@ -65,7 +67,7 @@
                 </div>
             </div>
         </section>
-        <section class="details">
+        <section class="details" id="meer-informatie">
             <div class="content">
                 <h3>Meer informatie</h3>
                 <div class="text">
@@ -97,5 +99,16 @@
                 </div>
             </div>
         </section>
+        <section class="menu cssbox-box" id="menu" role="presentation" aria-labelledby="toggle_menu_label">
+            <a href="#" class="close"><i class="material-icons">close</i></a>
+            <h4>Menu</h4>
+            <ul>
+                <li><a href="#wat-is-energiewerk">Wat</a></li>
+                <li><a href="#wat-doet-energiewerk-met-jou">Hoe</a></li>
+                <li><a href="#wie-is-annita">Wie</a></li>
+                <li><a href="#meer-informatie">Meer</a></li>
+            </ul>
+        </section>
+        <a href="#" class="cssbox-overlay"></a>
     </body>
 </html>
