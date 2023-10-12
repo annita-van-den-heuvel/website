@@ -22,7 +22,9 @@ a:hover { text-decoration: underline; }
     section.menu::after { display: none; }
     section.header ::selection, section.details ::selection { background-color: rgba(0, 0, 0, .6); }
         .content { position: relative; width: 80vw; min-height: 200px; padding: 0 0 70px; margin: 0 auto; overflow: hidden; }
-            .beware { position: relative; width: 100%; min-height: 50px; padding: 0 0 20px; margin: 0 auto; overflow: hidden; text-align: left; font-size: 16px; color: #fff; text-shadow: -1px -1px 0 rgba(0, 0, 0, .3), 1px -1px 0 rgba(0, 0, 0, .3), -1px 1px 0 rgba(0, 0, 0, .3), 1px 1px 0 rgba(0, 0, 0, .3); }
+            .beware { position: relative; width: 100%; min-height: 50px; padding: 0 0 10px; margin: 0 auto; overflow: hidden; text-align: left; font-size: 16px; color: #fff; text-shadow: -1px -1px 0 rgba(0, 0, 0, .3), 1px -1px 0 rgba(0, 0, 0, .3), -1px 1px 0 rgba(0, 0, 0, .3), 1px 1px 0 rgba(0, 0, 0, .3); }
+            	.beware p { margin: 10px 0; }
+	            	.beware span { white-space: nowrap; }
             section.ltr .content > * { float: left; text-align: left; }
             section.rtl .content > * { float: right; text-align: right; }
             .logo, .tagline { position: relative; float: left; margin: 0; overflow: hidden; font-weight: normal; text-shadow: -1px -1px 0 rgba(0, 0, 0, .3), 1px -1px 0 rgba(0, 0, 0, .3), -1px 1px 0 rgba(0, 0, 0, .3), 1px 1px 0 rgba(0, 0, 0, .3); cursor: default; user-select: none; }
@@ -95,7 +97,7 @@ a:hover { text-decoration: underline; }
         h3, .content .text { width: calc(70vw - 240px - 45px); }
         section.details h3, section.details .content .text { width: 100%; }
         .content .text span { white-space: nowrap; }
-        section .content .beware { padding-top: 30px; }
+        section .content .beware { padding-top: 20px; }
 }
 
 @media (min-width: 1500px){
