@@ -2,7 +2,7 @@
 @import url("//fonts.googleapis.com/css?family=Parisienne&display=swap");
 @import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:wght@300;400&display=swap");
 
-html { scroll-behavior: smooth; cursor: initial; }
+html { scroll-behavior: smooth; overscroll-behavior: none; cursor: initial; }
 body { font-family: "Source Sans Pro", sans-serif; font-size: 16px; line-height: 26px; }
 ::selection { background-color: rgba(255, 255, 255, .6); }
 a { color: inherit; text-decoration: none; }
