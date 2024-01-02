@@ -58,7 +58,7 @@ a:hover { text-decoration: underline; }
     section.rtl, section.ltr, section.details { padding: 100px 0; }
         .logo { font-size: 57px; }
         section.what .image { display: block; }
-        .beware { font-size: 19px; }
+        .beware { font-size: 18px; }
 }
 
 @media (min-width: 768px){
